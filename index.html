@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabic Writer 1.4.4 الكاتب العربي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Noto+Sans+Arabic:wght@100..900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Almarai:wght@300;400;700;800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="app-header">
+      <div class="header-content">
+        <div class="title-section">
+          <h1>Arabic Writer</h1>
+          <p class="version">Version 1.4.4</p>
+        </div>
+        <div class="header-controls">
+        </div>
+      </div>
+    </header>
+
+    <form name="writer" id="writer" action="#" class="writer-form">
+            <section class="text-areas">
+        <div class="textarea-container">
+          <label id="box2info" for="outbox" class="textarea-label">Output</label>
+          <textarea 
+            name="outbox" 
+            id="outbox" 
+            class="output-box" 
+            rows="12" 
+            cols="50" 
+            readonly
+            placeholder="؟ﻲﺑﺮﻌﻟﺍ ﺐﺗﺎﻜﻟﺍ ﻮﻫ ﺎﻣ
+.ﻢﻴﻤﺼﺘﻟﺍ ﺞﻣﺍﺮﺑ ﻦﻣ ﻩﺮﻴﻏﻭ Photoshop Adobe ﺞﻣﺎﻧﺮﺒﻛ ﺔﻴﺑﺮﻌﻟﺍ ﺔﻐﻠﻟﺍ ﻢﻋﺪﺗ ﻻ ﻲﺘﻟﺍ ﺞﻣﺍﺮﺒﻟﺎﺑ ﺔﺑﺎﺘﻜﻟﺍ ﻲﻓ ﺏﺮﻌﻟﺍ ﻦﻴﻤﻤﺼﻤﻟﺍ ﺪﻋﺎﺴﻳ ﻲﻜﻟ ﻢﻤﺻ ﺞﻣﺎﻧﺮﺑ ﻮﻫ ﻲﺑﺮﻌﻟﺍ ﺐﺗﺎﻜﻟﺍ
+
+؟ﻲﺑﺮﻌﻟﺍ ﺐﺗﺎﻜﻟﺍ ﻞﻤﻌﻳ ﻒﻴﻛ
+..ﺔﻴﺑﺮﻌﻟﺍ ﻢﻋﺪﻳ ﻻ ﻱﺬﻟﺍ ﺞﻣﺎﻧﺮﺒﻟﺍ ﻰﻟﺍ ﺞﺗﺎﻨﻟﺍ ﺺﻨﻟﺍ ﺦﺴﻧﺍ ﻢﺛ (Input Process) ﻭﺍ (ﺺﻨﻟﺍ ﺔﺠﻟﺎﻌﻣ) ﺭﺯ ﻰﻠﻋ ﻂﻐﺿﺍ ﻢﺛ ،ﻕﻭﺪﻨﺼﻟﺍ ﺍﺬﻫ ﻲﻓ ﻲﺑﺮﻌﻟﺍ ﺺﻨﻟﺍ ﺐﺘﻛﺍ"
+            ></textarea>
+        </div>
+
+        <div class="textarea-container">
+          <label id="box1info" for="inpbox" class="textarea-label">Input</label>
+          <textarea 
+            name="inpbox" 
+            id="inpbox" 
+            class="input-box" 
+            rows="12" 
+            cols="50"
+            onclick="return(update(this))" 
+            onkeyup="return(update(this))"
+            onkeydown="return(update(this))" 
+            onkeypress="return(update(this))"
+            onmouseup="return(update(this))" 
+            onmousedown="return(update(this))"
+            placeholder="ما هو الكاتب العربي؟
+الكاتب العربي هو برنامج صمم لكي يساعد المصممين العرب في الكتابة بالبرامج التي لا تدعم اللغة العربية كبرنامج Adobe Photoshop وغيره من برامج التصميم.
+
+كيف يعمل الكاتب العربي؟
+اكتب النص العربي في هذا الصندوق، ثم اضغط على زر (معالجة النص) او (Process Input) ثم انسخ النص الناتج الى البرنامج الذي لا يدعم العربية.."
+          ></textarea>
+        </div>
+      </section>
+
+      <!-- Control Section -->
+      <section class="controls">
+        <div class="control-group">
+          <button id="process-btn" onclick="ProcessInput();" type="button" class="btn btn-primary">
+            <span class="btn-icon">⚙️</span>
+            <div class="btn-label">Process</div>
+            <span id="processtxt" class="btn-text">Process Input</span>
+          </button>
+          <button id="copy-btn" onclick="copyOutput();" type="button" class="btn btn-secondary">
+            <span class="btn-icon">📋</span>
+            <div class="btn-label">Copy</div>
+            <span id="copytxt" class="btn-text">Copy Output</span>
+          </button>
+          <button id="clear-btn" onclick="clearFields();" type="button" class="btn btn-outline">
+            <span class="btn-icon">🗑️</span>
+            <div class="btn-label">Clear</div>
+            <span id="cleartxt" class="btn-text">Clear All</span>
+          </button>
+        </div>
+
+        <div class="control-group">
+          <button id="languagepop" onclick="toggleLanguage();" type="button" class="btn btn-outline">
+            <span class="btn-icon">🌐</span>
+            <div class="btn-label">Language</div>
+            <span id="languagepop-text" class="btn-text">English</span>
+          </button>
+          <button id="xnumbers" onclick="toggleNumbers();" type="button" class="btn btn-outline">
+            <span class="btn-icon">🔢</span>
+            <div class="btn-label">Numbers</div>
+            <span class="btn-text">Arabic (123)</span>
+          </button>
+          <button id="xharakat" onclick="switch_harakat();" type="button" class="btn btn-outline">
+            <span class="btn-icon">َ</span>
+            <span class="btn-text">Harakat Enabled</span>
+          </button>
+          <button id="text-direction" onclick="switchTextDirection();" type="button" class="btn btn-outline">
+            <span class="btn-icon">↔</span>
+            <div class="btn-label">Text Alignment</div>
+            <span class="btn-text">Right</span>
+          </button>
+        </div>
+
+        <div class="control-group">
+          <button id="keyboardpop" onclick="show('inline-keyboard');" type="button" class="btn btn-outline">
+            <span class="btn-icon">⌨️</span>
+            <div class="btn-label">Virtual Keyboard</div>
+            <span class="btn-text">Show/Hide</span>
+          </button>
+          <button id="aboutpop" onclick="show('about');" type="button" class="btn btn-outline">
+            <span class="btn-icon">ℹ️</span>
+            <div class="btn-label">About</div>
+            <span class="btn-text">About</span>
+          </button>
+          <button id="settings-btn" onclick="show('settings');" type="button" class="btn btn-outline">
+            <span class="btn-icon">⚙️</span>
+            <div class="btn-label">Settings</div>
+            <span class="btn-text">Settings</span>
+          </button>
+        </div>
+      </section>
+    </form>
+
+    <!-- Inline Arabic Keyboard -->
+    <section id="inline-keyboard" class="inline-keyboard" style="display: none;">
+      <div class="keyboard-header">
+        <h3>Arabic Keyboard / لوحة المفاتيح العربية</h3>
+        <button onclick="hide('inline-keyboard');" type="button" class="keyboard-toggle">Hide</button>
+      </div>
+      <div class="keyboard-container">
+        <!-- Row 1 -->
+        <div class="keyboard-row">
+          <button id="kbspace" onclick="remKB();" type="button" class="key key-wide">Backspace</button>
+          <button onclick="addKB('+');" type="button" class="key">+</button>
+          <button onclick="addKB('-');" type="button" class="key">-</button>
+          <button onclick="addKB('0');" type="button" class="key">٠</button>
+          <button onclick="addKB('9');" type="button" class="key">٩</button>
+          <button onclick="addKB('8');" type="button" class="key">٨</button>
+          <button onclick="addKB('7');" type="button" class="key">٧</button>
+          <button onclick="addKB('6');" type="button" class="key">٦</button>
+          <button onclick="addKB('5');" type="button" class="key">٥</button>
+          <button onclick="addKB('4');" type="button" class="key">٤</button>
+          <button onclick="addKB('3');" type="button" class="key">٣</button>
+          <button onclick="addKB('2');" type="button" class="key">٢</button>
+          <button onclick="addKB('1');" type="button" class="key">١</button>
+          <button onclick="addKB('ذ');" type="button" class="key">ذ</button>
+        </div>
+        
+        <!-- Row 2 -->
+        <div class="keyboard-row">
+          <button onclick="addKB('\\');" type="button" class="key">\</button>
+          <button onclick="addKB('|');" type="button" class="key">|</button>
+          <button onclick="addKB('؛');" type="button" class="key">؛</button>
+          <button onclick="addKB('د');" type="button" class="key">د</button>
+          <button onclick="addKB('ج');" type="button" class="key">ج</button>
+          <button onclick="addKB('ح');" type="button" class="key">ح</button>
+          <button onclick="addKB('خ');" type="button" class="key">خ</button>
+          <button onclick="addKB('ه');" type="button" class="key">هـ</button>
+          <button onclick="addKB('ع');" type="button" class="key">ع</button>
+          <button onclick="addKB('غ');" type="button" class="key">غ</button>
+          <button onclick="addKB('ف');" type="button" class="key">ف</button>
+          <button onclick="addKB('ق');" type="button" class="key">ق</button>
+          <button onclick="addKB('ث');" type="button" class="key">ث</button>
+          <button onclick="addKB('ص');" type="button" class="key">ص</button>
+          <button onclick="addKB('ض');" type="button" class="key">ض</button>
+          <button id="ktab" onclick="addKB('  ');" type="button" class="key key-medium">Tab</button>
+        </div>
+        
+        <!-- Row 3 -->
+        <div class="keyboard-row">
+          <button onclick="addKB('\n');" type="button" class="key key-medium">↲</button>
+          <button onclick="addKB(':');" type="button" class="key">:</button>
+          <button onclick="addKB('/');" type="button" class="key">/</button>
+          <button onclick="addKB('،');" type="button" class="key">،</button>
+          <button onclick="addKB('ط');" type="button" class="key">ط</button>
+          <button onclick="addKB('ك');" type="button" class="key">ك</button>
+          <button onclick="addKB('م');" type="button" class="key">م</button>
+          <button onclick="addKB('ن');" type="button" class="key">ن</button>
+          <button onclick="addKB('ت');" type="button" class="key">ت</button>
+          <button onclick="addKB('ا');" type="button" class="key">ا</button>
+          <button onclick="addKB('ل');" type="button" class="key">ل</button>
+          <button onclick="addKB('ب');" type="button" class="key">ب</button>
+          <button onclick="addKB('ي');" type="button" class="key">ي</button>
+          <button onclick="addKB('س');" type="button" class="key">س</button>
+          <button onclick="addKB('ش');" type="button" class="key">ش</button>
+          <button onclick="addKB('[');" type="button" class="key">[</button>
+          <button onclick="addKB(']');" type="button" class="key">]</button>
+        </div>
+        
+        <!-- Row 4 -->
+        <div class="keyboard-row">
+          <button onclick="addKB('؟');" type="button" class="key">؟</button>
+          <button onclick="addKB('&quot;');" type="button" class="key">"</button>
+          <button onclick="addKB('.');" type="button" class="key">.</button>
+          <button onclick="addKB(',');" type="button" class="key">,</button>
+          <button onclick="addKB('\'');" type="button" class="key">'</button>
+          <button onclick="addKB('ظ');" type="button" class="key">ظ</button>
+          <button onclick="addKB('ز');" type="button" class="key">ز</button>
+          <button onclick="addKB('و');" type="button" class="key">و</button>
+          <button onclick="addKB('ة');" type="button" class="key">ة</button>
+          <button onclick="addKB('ى');" type="button" class="key">ى</button>
+          <button onclick="addKB('لا');" type="button" class="key">لا</button>
+          <button onclick="addKB('ر');" type="button" class="key">ر</button>
+          <button onclick="addKB('ؤ');" type="button" class="key">ؤ</button>
+          <button onclick="addKB('ء');" type="button" class="key">ء</button>
+          <button onclick="addKB('ئ');" type="button" class="key">ئـ</button>
+          <button onclick="addKB('{');" type="button" class="key">{</button>
+          <button onclick="addKB('}');" type="button" class="key">}</button>
+        </div>
+        
+        <!-- Row 5 - Extended Characters -->
+        <div class="keyboard-row">
+          <button onclick="addKB('پ');" type="button" class="key">پ</button>
+          <button onclick="addKB('چ');" type="button" class="key">چ</button>
+          <button onclick="addKB('ژ');" type="button" class="key">ژ</button>
+          <button onclick="addKB('ڤ');" type="button" class="key">ڤ</button>
+          <button onclick="addKB('گ');" type="button" class="key">گ</button>
+          <button onclick="addKB('ک');" type="button" class="key">ک</button>
+          <button onclick="addKB('ی');" type="button" class="key">ی</button>
+          <button onclick="addKB('ٹ');" type="button" class="key">ٹ</button>
+          <button onclick="addKB('ہ');" type="button" class="key">ہ</button>
+          <button onclick="addKB('ے');" type="button" class="key">ے</button>
+          <button onclick="addKB('ڈ');" type="button" class="key">ڈ</button>
+          <button onclick="addKB('ڑ');" type="button" class="key">ڑ</button>
+          <button onclick="addKB('ۇ');" type="button" class="key">ۇ</button>
+          <button onclick="addKB('ۆ');" type="button" class="key">ۆ</button>
+          <button onclick="addKB('ۈ');" type="button" class="key">ۈ</button>
+          <button onclick="addKB('ـ');" type="button" class="key">ــ</button>
+          <button onclick="addKB('<');" type="button" class="key"><</button>
+          <button onclick="addKB('>');" type="button" class="key">></button>
+        </div>
+        
+        <!-- Row 6 - Special Characters -->
+        <div class="keyboard-row">
+          <button onclick="addKB('لا');" type="button" class="key">لا</button>
+          <button onclick="addKB('أ');" type="button" class="key">أ</button>
+          <button onclick="addKB('لأ');" type="button" class="key">لأ</button>
+          <button onclick="addKB('إ');" type="button" class="key">إ</button>
+          <button onclick="addKB('لإ');" type="button" class="key">لإ</button>
+          <button onclick="addKB('آ');" type="button" class="key">آ</button>
+          <button onclick="addKB('لآ');" type="button" class="key">لآ</button>
+          <button onclick="addKB('ُ');" type="button" class="key">ُ</button>
+          <button onclick="addKB('ٌ');" type="button" class="key">ٌ</button>
+          <button onclick="addKB('َ');" type="button" class="key">َ</button>
+          <button onclick="addKB('ً');" type="button" class="key">ً</button>
+          <button onclick="addKB('ِ');" type="button" class="key">ِ</button>
+          <button onclick="addKB('ٍ');" type="button" class="key">ٍ</button>
+          <button onclick="addKB('ّ');" type="button" class="key">ّ</button>
+          <button onclick="addKB('ْ');" type="button" class="key">ْ</button>
+          <button onclick="addKB('~');" type="button" class="key">~</button>
+        </div>
+        
+        <!-- Row 7 - Symbols and Spacebar -->
+        <div class="keyboard-row">
+          <button onclick="addKB('×');" type="button" class="key">×</button>
+          <button onclick="addKB('÷');" type="button" class="key">÷</button>
+          <button onclick="addKB('\'');" type="button" class="key">'</button>
+          <button onclick="addKB('=');" type="button" class="key">=</button>
+          <button onclick="addKB('_');" type="button" class="key">_</button>
+          <button onclick="addKB('(');" type="button" class="key">(</button>
+          <button onclick="addKB(')');" type="button" class="key">)</button>
+          <button onclick="addKB('*');" type="button" class="key">*</button>
+          <button id="kspace" onclick="addKB(' ');" type="button" class="key key-spacebar">Space</button>
+          <button onclick="addKB('!');" type="button" class="key">!</button>
+          <button onclick="addKB('؟');" type="button" class="key">؟</button>
+          <button onclick="addKB('$');" type="button" class="key">$</button>
+          <button onclick="addKB('%');" type="button" class="key">%</button>
+          <button onclick="addKB('^');" type="button" class="key">^</button>
+          <button onclick="addKB('&');" type="button" class="key">&</button>
+          <button onclick="addKB('@');" type="button" class="key">@</button>
+          <button onclick="addKB('#');" type="button" class="key">#</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Language Selection Modal -->
+    <div id="lang" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Select Language / اختر اللغة</h3>
+          <button onclick="hide('lang');" type="button" class="modal-close">×</button>
+        </div>
+        <div class="modal-body">
+          <button onclick="setLang('ar');" type="button" class="btn btn-modal">العربية</button>
+          <button onclick="setLang('fa');" type="button" class="btn btn-modal">فارسي</button>
+          <button onclick="setLang('en');" type="button" class="btn btn-modal">English</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Numbers Selection Modal -->
+    <div id="numbers" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Select Numbers / اختر الأرقام</h3>
+          <button onclick="hide('numbers');" type="button" class="modal-close">×</button>
+        </div>
+        <div class="modal-body">
+          <button onclick="setNumbers('ar');" type="button" class="btn btn-modal">العربية</button>
+          <button onclick="setNumbers('fa');" type="button" class="btn btn-modal">فارسي</button>
+          <button onclick="setNumbers('en');" type="button" class="btn btn-modal">English</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arabic Keyboard Modal -->
+    <div id="keyboard" class="modal modal-large">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Arabic Keyboard / لوحة المفاتيح العربية</h3>
+          <button onclick="hide('keyboard');" type="button" class="modal-close">×</button>
+        </div>
+        <div class="modal-body">
+          <div class="keyboard-container">
+            <!-- Row 1 -->
+            <div class="keyboard-row">
+              <button id="kbspace" onclick="remKB();" type="button" class="key key-wide">Backspace</button>
+              <button onclick="addKB('+');" type="button" class="key">+</button>
+              <button onclick="addKB('-');" type="button" class="key">-</button>
+              <button onclick="addKB('0');" type="button" class="key">٠</button>
+              <button onclick="addKB('9');" type="button" class="key">٩</button>
+              <button onclick="addKB('8');" type="button" class="key">٨</button>
+              <button onclick="addKB('7');" type="button" class="key">٧</button>
+              <button onclick="addKB('6');" type="button" class="key">٦</button>
+              <button onclick="addKB('5');" type="button" class="key">٥</button>
+              <button onclick="addKB('4');" type="button" class="key">٤</button>
+              <button onclick="addKB('3');" type="button" class="key">٣</button>
+              <button onclick="addKB('2');" type="button" class="key">٢</button>
+              <button onclick="addKB('1');" type="button" class="key">١</button>
+              <button onclick="addKB('ذ');" type="button" class="key">ذ</button>
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="keyboard-row">
+              <button onclick="addKB('\\');" type="button" class="key">\</button>
+              <button onclick="addKB('|');" type="button" class="key">|</button>
+              <button onclick="addKB('؛');" type="button" class="key">؛</button>
+              <button onclick="addKB('د');" type="button" class="key">د</button>
+              <button onclick="addKB('ج');" type="button" class="key">ج</button>
+              <button onclick="addKB('ح');" type="button" class="key">ح</button>
+              <button onclick="addKB('خ');" type="button" class="key">خ</button>
+              <button onclick="addKB('ه');" type="button" class="key">هـ</button>
+              <button onclick="addKB('ع');" type="button" class="key">ع</button>
+              <button onclick="addKB('غ');" type="button" class="key">غ</button>
+              <button onclick="addKB('ف');" type="button" class="key">ف</button>
+              <button onclick="addKB('ق');" type="button" class="key">ق</button>
+              <button onclick="addKB('ث');" type="button" class="key">ث</button>
+              <button onclick="addKB('ص');" type="button" class="key">ص</button>
+              <button onclick="addKB('ض');" type="button" class="key">ض</button>
+              <button id="ktab" onclick="addKB('  ');" type="button" class="key key-medium">Tab</button>
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="keyboard-row">
+              <button onclick="addKB('\n');" type="button" class="key key-medium">↲</button>
+              <button onclick="addKB(':');" type="button" class="key">:</button>
+              <button onclick="addKB('/');" type="button" class="key">/</button>
+              <button onclick="addKB('،');" type="button" class="key">،</button>
+              <button onclick="addKB('ط');" type="button" class="key">ط</button>
+              <button onclick="addKB('ك');" type="button" class="key">ك</button>
+              <button onclick="addKB('م');" type="button" class="key">م</button>
+              <button onclick="addKB('ن');" type="button" class="key">ن</button>
+              <button onclick="addKB('ت');" type="button" class="key">ت</button>
+              <button onclick="addKB('ا');" type="button" class="key">ا</button>
+              <button onclick="addKB('ل');" type="button" class="key">ل</button>
+              <button onclick="addKB('ب');" type="button" class="key">ب</button>
+              <button onclick="addKB('ي');" type="button" class="key">ي</button>
+              <button onclick="addKB('س');" type="button" class="key">س</button>
+              <button onclick="addKB('ش');" type="button" class="key">ش</button>
+              <button onclick="addKB('[');" type="button" class="key">[</button>
+              <button onclick="addKB(']');" type="button" class="key">]</button>
+            </div>
+            
+            <!-- Row 4 -->
+            <div class="keyboard-row">
+              <button onclick="addKB('؟');" type="button" class="key">؟</button>
+              <button onclick="addKB('&quot;');" type="button" class="key">"</button>
+              <button onclick="addKB('.');" type="button" class="key">.</button>
+              <button onclick="addKB(',');" type="button" class="key">,</button>
+              <button onclick="addKB('\'');" type="button" class="key">'</button>
+              <button onclick="addKB('ظ');" type="button" class="key">ظ</button>
+              <button onclick="addKB('ز');" type="button" class="key">ز</button>
+              <button onclick="addKB('و');" type="button" class="key">و</button>
+              <button onclick="addKB('ة');" type="button" class="key">ة</button>
+              <button onclick="addKB('ى');" type="button" class="key">ى</button>
+              <button onclick="addKB('لا');" type="button" class="key">لا</button>
+              <button onclick="addKB('ر');" type="button" class="key">ر</button>
+              <button onclick="addKB('ؤ');" type="button" class="key">ؤ</button>
+              <button onclick="addKB('ء');" type="button" class="key">ء</button>
+              <button onclick="addKB('ئ');" type="button" class="key">ئـ</button>
+              <button onclick="addKB('{');" type="button" class="key">{</button>
+              <button onclick="addKB('}');" type="button" class="key">}</button>
+            </div>
+            
+            <!-- Row 5 - Extended Characters -->
+            <div class="keyboard-row">
+              <button onclick="addKB('پ');" type="button" class="key">پ</button>
+              <button onclick="addKB('چ');" type="button" class="key">چ</button>
+              <button onclick="addKB('ژ');" type="button" class="key">ژ</button>
+              <button onclick="addKB('ڤ');" type="button" class="key">ڤ</button>
+              <button onclick="addKB('گ');" type="button" class="key">گ</button>
+              <button onclick="addKB('ک');" type="button" class="key">ک</button>
+              <button onclick="addKB('ی');" type="button" class="key">ی</button>
+              <button onclick="addKB('ٹ');" type="button" class="key">ٹ</button>
+              <button onclick="addKB('ہ');" type="button" class="key">ہ</button>
+              <button onclick="addKB('ے');" type="button" class="key">ے</button>
+              <button onclick="addKB('ڈ');" type="button" class="key">ڈ</button>
+              <button onclick="addKB('ڑ');" type="button" class="key">ڑ</button>
+              <button onclick="addKB('ۇ');" type="button" class="key">ۇ</button>
+              <button onclick="addKB('ۆ');" type="button" class="key">ۆ</button>
+              <button onclick="addKB('ۈ');" type="button" class="key">ۈ</button>
+              <button onclick="addKB('ـ');" type="button" class="key">ــ</button>
+              <button onclick="addKB('<');" type="button" class="key"><</button>
+              <button onclick="addKB('>');" type="button" class="key">></button>
+            </div>
+            
+            <!-- Row 6 - Special Characters -->
+            <div class="keyboard-row">
+              <button onclick="addKB('لا');" type="button" class="key">لا</button>
+              <button onclick="addKB('أ');" type="button" class="key">أ</button>
+              <button onclick="addKB('لأ');" type="button" class="key">لأ</button>
+              <button onclick="addKB('إ');" type="button" class="key">إ</button>
+              <button onclick="addKB('لإ');" type="button" class="key">لإ</button>
+              <button onclick="addKB('آ');" type="button" class="key">آ</button>
+              <button onclick="addKB('لآ');" type="button" class="key">لآ</button>
+              <button onclick="addKB('ُ');" type="button" class="key">ُ</button>
+              <button onclick="addKB('ٌ');" type="button" class="key">ٌ</button>
+              <button onclick="addKB('َ');" type="button" class="key">َ</button>
+              <button onclick="addKB('ً');" type="button" class="key">ً</button>
+              <button onclick="addKB('ِ');" type="button" class="key">ِ</button>
+              <button onclick="addKB('ٍ');" type="button" class="key">ٍ</button>
+              <button onclick="addKB('ّ');" type="button" class="key">ّ</button>
+              <button onclick="addKB('ْ');" type="button" class="key">ْ</button>
+              <button onclick="addKB('~');" type="button" class="key">~</button>
+            </div>
+            
+            <!-- Row 7 - Symbols and Spacebar -->
+            <div class="keyboard-row">
+              <button onclick="addKB('×');" type="button" class="key">×</button>
+              <button onclick="addKB('÷');" type="button" class="key">÷</button>
+              <button onclick="addKB('\'');" type="button" class="key">'</button>
+              <button onclick="addKB('=');" type="button" class="key">=</button>
+              <button onclick="addKB('_');" type="button" class="key">_</button>
+              <button onclick="addKB('(');" type="button" class="key">(</button>
+              <button onclick="addKB(')');" type="button" class="key">)</button>
+              <button onclick="addKB('*');" type="button" class="key">*</button>
+              <button id="kspace" onclick="addKB(' ');" type="button" class="key key-spacebar">Space</button>
+              <button onclick="addKB('!');" type="button" class="key">!</button>
+              <button onclick="addKB('؟');" type="button" class="key">؟</button>
+              <button onclick="addKB('$');" type="button" class="key">$</button>
+              <button onclick="addKB('%');" type="button" class="key">%</button>
+              <button onclick="addKB('^');" type="button" class="key">^</button>
+              <button onclick="addKB('&');" type="button" class="key">&</button>
+              <button onclick="addKB('@');" type="button" class="key">@</button>
+              <button onclick="addKB('#');" type="button" class="key">#</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Modal -->
+    <div id="about" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>About Arabic Writer</h3>
+          <button onclick="hide('about');" type="button" class="modal-close">×</button>
+        </div>
+        <div class="modal-body">
+          <div class="about-content">
+            <h4>Arabic Writer v1.4.4 - Enhanced Edition</h4>
+            
+            <div class="about-grid">
+              <div>
+                <h5>Original Creator</h5>
+                <p><strong id="creator-name">Omar Mhuammed</strong></p>
+                <p>Created the original Arabic Writer application to help Arabic designers work with programs that don't support Arabic text processing.</p>
+                <div class="social-links">
+                  <a href="https://omar84.com/" target="_blank" rel="noopener noreferrer" title="Omar's Website">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" alt="Website" class="social-icon"> <span id="website-text">Website</span>
+                  </a>
+                  <a href="https://github.com/omar84" target="_blank" rel="noopener noreferrer" title="Omar's GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="social-icon"> GitHub
+                  </a>
+                </div>
+              </div>
+              
+              <div>
+                <h5>Enhanced By</h5>
+                <p><strong id="enhancer-name">Anad Askar</strong></p>
+                <p>I completely modernized the application with advanced theming, enhanced layouts, improved UX, and comprehensive customization options.</p>
+                <div class="social-links">
+                  <a href="https://x.com/Hjbiki" target="_blank" rel="noopener noreferrer" title="Anad's X">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="X" class="social-icon"> <span id="x-text">X</span>
+                  </a>
+                  <a href="https://dkn.to/hibiki" target="_blank" rel="noopener noreferrer" title="Support via Dokan">
+                    <img src="https://img.icons8.com/fluency/48/donate.png" alt="Donate" class="social-icon"> <span id="donate-text">Donate</span>
+                  </a>
+                  <a href="https://github.com/Hjbiki/arabic_writer_enhanced" target="_blank" rel="noopener noreferrer" title="Enhanced Project GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="social-icon"> GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <h5>What is Arabic Writer?</h5>
+            <p>Arabic Writer is a web-based tool designed to help Arabic designers and writers work with programs that don't support Arabic text processing, such as Adobe Photoshop and other design applications.</p>
+            
+            <h5>How does it work?</h5>
+            <p>Simply type your Arabic text in the input box, click "Process Input", and copy the processed text to your design application. The tool handles proper Arabic text rendering and character connections.</p>
+            
+            <h5>Enhanced Features</h5>
+            <ul>
+              <li><strong>Advanced Theming:</strong> 5 preset themes plus custom color picker</li>
+              <li><strong>Enhanced Layouts:</strong> 8 different layout modes for every use case</li>
+              <li><strong>Gradient Backgrounds:</strong> Beautiful gradient options</li>
+              <li><strong>Typography System:</strong> 20+ professional fonts with custom upload</li>
+              <li><strong>Multi-language Support:</strong> Arabic, Persian, and English</li>
+              <li><strong>Virtual Keyboard:</strong> Complete Arabic keyboard with special characters</li>
+              <li><strong>Responsive Design:</strong> Works perfectly on all devices</li>
+              <li><strong>Accessibility:</strong> High contrast theme and keyboard shortcuts</li>
+            </ul>
+            
+            <h5>Technical Details</h5>
+            <p>Built with modern web technologies including HTML5, CSS3, and JavaScript ES6. Features include CSS custom properties for theming, localStorage for settings persistence, and responsive design principles.</p>
+            
+            <p style="text-align: center; margin-top: 2rem; font-style: italic;">
+              "Bridging the gap between Arabic typography and modern design tools"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Welcome Modal for First-Time Users -->
+    <div id="welcome" class="modal" style="display: none;">
+      <div class="modal-content modal-large">
+        <div class="modal-header">
+          <h3>Welcome to Arabic Writer!</h3>
+        </div>
+        <div class="modal-body">
+          <p style="text-align: center; margin-bottom: 2rem;">Choose your preferred layout to get started:</p>
+          
+          <div class="layout-grid">
+            <div class="layout-option" onclick="selectLayout('floating')" data-layout="floating">
+              <div class="layout-preview floating-preview">
+                <div class="preview-header"></div>
+                <div class="preview-toolbar"></div>
+                <div class="preview-content">
+                  <div class="preview-textarea"></div>
+                  <div class="preview-textarea"></div>
+                </div>
+              </div>
+              <h4>Floating Toolbar</h4>
+              <p>Action buttons float above text areas</p>
+            </div>
+
+            <div class="layout-option" onclick="selectLayout('sidebar')" data-layout="sidebar">
+              <div class="layout-preview sidebar-preview">
+                <div class="preview-header"></div>
+                <div class="preview-content">
+                  <div class="preview-sidebar"></div>
+                  <div class="preview-main">
+                    <div class="preview-textarea"></div>
+                    <div class="preview-textarea"></div>
+                  </div>
+                </div>
+              </div>
+              <h4>Sidebar Layout</h4>
+              <p>Controls organized in a side panel</p>
+            </div>
+
+            <div class="layout-option" onclick="selectLayout('cards')" data-layout="cards">
+              <div class="layout-preview cards-preview">
+                <div class="preview-header"></div>
+                <div class="preview-content">
+                  <div class="preview-card"></div>
+                  <div class="preview-card small"></div>
+                  <div class="preview-card small"></div>
+                  <div class="preview-card small"></div>
+                </div>
+              </div>
+              <h4>Card Layout</h4>
+              <p>Organized sections in card format</p>
+            </div>
+
+            <div class="layout-option" onclick="selectLayout('zen')" data-layout="zen">
+              <div class="layout-preview zen-preview">
+                <div class="preview-header mini"></div>
+                <div class="preview-content full">
+                  <div class="preview-textarea large"></div>
+                  <div class="preview-textarea large"></div>
+                </div>
+                <div class="preview-toolbar mini"></div>
+              </div>
+              <h4>Zen Mode</h4>
+              <p>Minimal interface, maximum text space</p>
+            </div>
+          </div>
+          
+          <div style="text-align: center; margin-top: 2rem;">
+            <p style="color: var(--text-muted); font-size: 0.875rem;">You can change this later in Settings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings" class="modal" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="settings-title">Settings</h3>
+          <button onclick="hide('settings');" type="button" class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="settings-section">
+            <h4 id="layout-modes-title">Enhanced Layout Modes</h4>
+            <p id="layout-modes-desc">Choose your preferred interface layout:</p>
+            <div class="enhanced-layout-selector">
+              <div class="enhanced-layout-option" data-layout="floating" onclick="changeLayout('floating')">
+                <div class="enhanced-layout-preview">
+                  <div style="height: 10px; background: var(--bg-tertiary); border-radius: 2px; margin: 2px;"></div>
+                  <div style="height: 4px; background: var(--accent-primary); border-radius: 2px; margin: 2px;"></div>
+                  <div style="display: flex; gap: 2px; margin: 2px;">
+                    <div style="flex: 1; height: 30px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px;"></div>
+                    <div style="flex: 1; height: 30px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px;"></div>
+                  </div>
+                </div>
+                <h5 id="floating-title">Floating Toolbar</h5>
+                <p id="floating-desc">Action buttons float above text areas</p>
+              </div>
+              
+              <div class="enhanced-layout-option" data-layout="sidebar" onclick="changeLayout('sidebar')">
+                <div class="enhanced-layout-preview">
+                  <div style="height: 8px; background: var(--bg-tertiary); border-radius: 2px; margin: 2px;"></div>
+                  <div style="display: flex; gap: 2px; margin: 2px;">
+                    <div style="width: 20px; height: 35px; background: var(--bg-tertiary); border-radius: 2px;"></div>
+                    <div style="flex: 1; height: 35px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px;"></div>
+                  </div>
+                </div>
+                <h5 id="sidebar-title">Sidebar</h5>
+                <p id="sidebar-desc">Controls organized in a side panel</p>
+              </div>
+              
+              <div class="enhanced-layout-option" data-layout="cards" onclick="changeLayout('cards')">
+                <div class="enhanced-layout-preview">
+                  <div style="height: 8px; background: var(--bg-tertiary); border-radius: 2px; margin: 2px;"></div>
+                  <div style="display: flex; gap: 2px; margin: 2px;">
+                    <div style="flex: 2; height: 35px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px;"></div>
+                    <div style="flex: 1; height: 35px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px;"></div>
+                  </div>
+                </div>
+                <h5 id="cards-title">Cards</h5>
+                <p id="cards-desc">Organized sections in card format</p>
+              </div>
+              
+              <div class="enhanced-layout-option" data-layout="zen" onclick="changeLayout('zen')">
+                <div class="enhanced-layout-preview">
+                  <div style="height: 6px; background: var(--bg-tertiary); border-radius: 2px; margin: 2px;"></div>
+                  <div style="display: flex; gap: 2px; margin: 2px;">
+                    <div style="flex: 1; height: 30px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px;"></div>
+                    <div style="flex: 1; height: 30px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px;"></div>
+                  </div>
+                  <div style="height: 4px; background: var(--accent-primary); border-radius: 2px; margin: 2px;"></div>
+                </div>
+                <h5 id="zen-title">Zen Mode</h5>
+                <p id="zen-desc">Minimal interface, maximum text space</p>
+              </div>
+              
+              <div class="enhanced-layout-option" data-layout="distraction-free" onclick="changeLayout('distraction-free')">
+                <div class="enhanced-layout-preview">
+                  <div style="display: flex; gap: 2px; margin: 8px 2px;">
+                    <div style="flex: 1; height: 35px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px;"></div>
+                    <div style="flex: 1; height: 35px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px;"></div>
+                  </div>
+                </div>
+                <h5 id="distraction-title">Distraction-Free</h5>
+                <p id="distraction-desc">Hide everything except text areas</p>
+              </div>
+              
+              <div class="enhanced-layout-option" data-layout="split-screen" onclick="changeLayout('split-screen')">
+                <div class="enhanced-layout-preview">
+                  <div style="height: 6px; background: var(--bg-tertiary); border-radius: 2px; margin: 2px;"></div>
+                  <div style="display: flex; gap: 1px; margin: 2px;">
+                    <div style="flex: 1; height: 35px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px;"></div>
+                    <div style="width: 2px; height: 35px; background: var(--border-medium);"></div>
+                    <div style="flex: 1; height: 35px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px;"></div>
+                  </div>
+                </div>
+                <h5 id="split-title">Split-Screen</h5>
+                <p id="split-desc">Input/output side by side</p>
+              </div>
+              
+              <div class="enhanced-layout-option" data-layout="presentation" onclick="changeLayout('presentation')">
+                <div class="enhanced-layout-preview">
+                  <div style="height: 10px; background: var(--bg-tertiary); border-radius: 2px; margin: 2px;"></div>
+                  <div style="display: flex; gap: 2px; margin: 2px;">
+                    <div style="flex: 1; height: 30px; background: var(--bg-primary); border: 2px solid var(--accent-primary); border-radius: 2px;"></div>
+                    <div style="flex: 1; height: 30px; background: var(--bg-primary); border: 2px solid var(--accent-primary); border-radius: 2px;"></div>
+                  </div>
+                </div>
+                <h5 id="presentation-title">Presentation</h5>
+                <p id="presentation-desc">Large text for demonstrations</p>
+              </div>
+              
+              <div class="enhanced-layout-option" data-layout="compact" onclick="changeLayout('compact')">
+                <div class="enhanced-layout-preview">
+                  <div style="height: 4px; background: var(--bg-tertiary); border-radius: 2px; margin: 1px;"></div>
+                  <div style="margin: 1px;">
+                    <div style="height: 18px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px; margin-bottom: 1px;"></div>
+                    <div style="height: 18px; background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: 2px;"></div>
+                  </div>
+                  <div style="height: 4px; background: var(--accent-primary); border-radius: 2px; margin: 1px;"></div>
+                </div>
+                <h5 id="compact-title">Compact</h5>
+                <p id="compact-desc">Optimized for smaller screens</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="settings-section">
+            <h4 id="theming-title">Advanced Theming</h4>
+            <p id="theming-desc">Choose from preset themes or customize your own:</p>
+            
+            <div class="theme-selector">
+              <div class="theme-option" data-theme="light" onclick="setAdvancedTheme('light')">
+                <div class="theme-preview theme-preview-light"></div>
+                <h5 id="light-title">Light</h5>
+                <p id="light-desc">Clean & bright</p>
+              </div>
+              
+              <div class="theme-option" data-theme="dark" onclick="setAdvancedTheme('dark')">
+                <div class="theme-preview theme-preview-dark"></div>
+                <h5 id="dark-title">Dark</h5>
+                <p id="dark-desc">Easy on the eyes</p>
+              </div>
+              
+              <div class="theme-option" data-theme="dark-blue" onclick="setAdvancedTheme('dark-blue')">
+                <div class="theme-preview theme-preview-dark-blue"></div>
+                <h5 id="dark-blue-title">Dark Blue</h5>
+                <p id="dark-blue-desc">Professional & modern</p>
+              </div>
+              
+              <div class="theme-option" data-theme="sepia" onclick="setAdvancedTheme('sepia')">
+                <div class="theme-preview theme-preview-sepia"></div>
+                <h5 id="sepia-title">Sepia</h5>
+                <p id="sepia-desc">Warm & comfortable</p>
+              </div>
+              
+              <div class="theme-option" data-theme="high-contrast" onclick="setAdvancedTheme('high-contrast')">
+                <div class="theme-preview theme-preview-high-contrast"></div>
+                <h5 id="high-contrast-title">High Contrast</h5>
+                <p id="high-contrast-desc">Accessibility focused</p>
+              </div>
+              
+              <div class="theme-option" data-theme="custom" onclick="setAdvancedTheme('custom')">
+                <div class="theme-preview" style="background: var(--custom-bg-primary); border: 2px solid var(--custom-accent-primary);"></div>
+                <h5 id="custom-title">Custom</h5>
+                <p id="custom-desc">Your personalized theme</p>
+              </div>
+            </div>
+            
+            <div class="color-picker-section" id="custom-theme-section" style="display: none;">
+              <h5 id="custom-colors-title">Custom Theme Colors</h5>
+              <div class="color-picker-grid">
+                                  <div class="color-picker-item">
+                    <label id="background-label">Background:</label>
+                    <input type="color" id="custom-bg-color" class="color-picker-input" value="#ffffff" onchange="updateCustomTheme('bg-primary', this.value)">
+                  </div>
+                  <div class="color-picker-item">
+                    <label id="secondary-bg-label">Secondary BG:</label>
+                    <input type="color" id="custom-bg-secondary" class="color-picker-input" value="#f8f9fa" onchange="updateCustomTheme('bg-secondary', this.value)">
+                  </div>
+                  <div class="color-picker-item">
+                    <label id="text-color-label">Text Color:</label>
+                    <input type="color" id="custom-text-color" class="color-picker-input" value="#1f2937" onchange="updateCustomTheme('text-primary', this.value)">
+                  </div>
+                  <div class="color-picker-item">
+                    <label id="accent-color-label">Accent Color:</label>
+                    <input type="color" id="custom-accent-color" class="color-picker-input" value="#3b82f6" onchange="updateCustomTheme('accent-primary', this.value)">
+                  </div>
+                  <div class="color-picker-item">
+                    <label id="font-color-label">Font Color:</label>
+                    <input type="color" id="custom-font-color" class="color-picker-input" value="#1f2937" onchange="updateCustomTheme('font-color', this.value)">
+                  </div>
+                  <div class="color-picker-item">
+                    <label id="textbox-bg-label">Textbox BG:</label>
+                    <input type="color" id="custom-textbox-bg" class="color-picker-input" value="#ffffff" onchange="updateCustomTheme('textbox-bg', this.value)">
+                  </div>
+                  <div class="color-picker-item">
+                    <label id="button-color-label">Button Color:</label>
+                    <input type="color" id="custom-button-color" class="color-picker-input" value="#3b82f6" onchange="updateCustomTheme('button-color', this.value)">
+                  </div>
+                  <div class="color-picker-item">
+                    <label id="button-bg-label">Button BG:</label>
+                    <input type="color" id="custom-button-bg" class="color-picker-input" value="#ffffff" onchange="updateCustomTheme('button-bg', this.value)">
+                  </div>
+              </div>
+              <div style="margin-top: 1rem; text-align: center;">
+                <button id="reset-theme-btn" onclick="resetCustomTheme()" class="btn btn-outline" style="min-width: 120px;">Reset to Default</button>
+                <button id="save-theme-btn" onclick="saveCustomTheme()" class="btn btn-primary" style="min-width: 120px;">Save Theme</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="settings-section">
+            <h4 id="gradient-bg-title">Gradient Backgrounds</h4>
+            <p id="gradient-bg-desc">Add beautiful gradient backgrounds to enhance your experience:</p>
+            
+            <div class="gradient-toggle-container">
+              <label class="gradient-toggle-label">
+                <input type="checkbox" id="gradient-enabled" onchange="toggleGradientBackground()" class="gradient-checkbox">
+                <span class="gradient-checkmark"></span>
+                <span id="enable-gradient-label">Enable gradient backgrounds</span>
+              </label>
+            </div>
+            
+            <div class="gradient-selector" id="gradient-selector" style="display: none;">
+              <div class="gradient-option gradient-primary" data-gradient="primary" onclick="setGradientBackground('primary')"></div>
+              <div class="gradient-option gradient-secondary" data-gradient="secondary" onclick="setGradientBackground('secondary')"></div>
+              <div class="gradient-option gradient-tertiary" data-gradient="tertiary" onclick="setGradientBackground('tertiary')"></div>
+              <div class="gradient-option gradient-quaternary" data-gradient="quaternary" onclick="setGradientBackground('quaternary')"></div>
+              <div class="gradient-option gradient-sunset" data-gradient="sunset" onclick="setGradientBackground('sunset')"></div>
+              <div class="gradient-option gradient-ocean" data-gradient="ocean" onclick="setGradientBackground('ocean')"></div>
+              <div class="gradient-option gradient-forest" data-gradient="forest" onclick="setGradientBackground('forest')"></div>
+              <div class="gradient-option gradient-cosmic" data-gradient="cosmic" onclick="setGradientBackground('cosmic')"></div>
+            </div>
+          </div>
+
+          <div class="settings-section">
+            <h4 id="font-settings-title">Font Settings</h4>
+            <div class="setting-item">
+              <label id="font-family-label">Font Family:</label>
+              <select id="font-selector" onchange="changeFontFamily()" class="font-select">
+                <option value="system" id="system-default-option">System Default</option>
+                <optgroup label="Arabic Fonts" id="arabic-fonts-optgroup">
+                  <option value="amiri">Amiri</option>
+                  <option value="cairo">Cairo</option>
+                  <option value="noto-sans-arabic">Noto Sans Arabic</option>
+                  <option value="tajawal">Tajawal</option>
+                  <option value="almarai">Almarai</option>
+                </optgroup>
+                <optgroup label="Popular Sans-Serif" id="sans-serif-optgroup">
+                  <option value="inter">Inter</option>
+                  <option value="roboto">Roboto</option>
+                  <option value="open-sans">Open Sans</option>
+                  <option value="lato">Lato</option>
+                  <option value="montserrat">Montserrat</option>
+                  <option value="nunito">Nunito</option>
+                  <option value="poppins">Poppins</option>
+                  <option value="source-sans-pro">Source Sans Pro</option>
+                  <option value="ubuntu">Ubuntu</option>
+                  <option value="fira-sans">Fira Sans</option>
+                  <option value="raleway">Raleway</option>
+                  <option value="oswald">Oswald</option>
+                  <option value="rubik">Rubik</option>
+                </optgroup>
+                <optgroup label="Popular Serif" id="serif-optgroup">
+                  <option value="playfair-display">Playfair Display</option>
+                  <option value="merriweather">Merriweather</option>
+                  <option value="libre-baskerville">Libre Baskerville</option>
+                  <option value="crimson-text">Crimson Text</option>
+                </optgroup>
+                <optgroup label="System Fonts" id="system-fonts-optgroup">
+                  <option value="arial">Arial</option>
+                  <option value="helvetica">Helvetica</option>
+                  <option value="times">Times New Roman</option>
+                  <option value="georgia">Georgia</option>
+                  <option value="courier">Courier New</option>
+                  <option value="verdana">Verdana</option>
+                  <option value="tahoma">Tahoma</option>
+                  <option value="trebuchet">Trebuchet MS</option>
+                  <option value="palatino">Palatino</option>
+                </optgroup>
+                <option value="custom" id="custom-font-option">Custom Font</option>
+              </select>
+            </div>
+            <div class="setting-item" id="custom-font-section" style="display: none;">
+              <label id="upload-font-label">Upload Custom Font:</label>
+              <input type="file" id="font-upload" accept=".woff,.woff2,.ttf,.otf" onchange="uploadCustomFont()" class="file-input">
+              <div class="font-info">
+                <small id="font-formats-label">Supported formats: .woff, .woff2, .ttf, .otf</small>
+              </div>
+            </div>
+            <div class="setting-item">
+              <label id="font-size-label">Font Size:</label>
+              <input type="range" id="font-size-slider" min="12" max="24" value="16" onchange="changeFontSize()" class="range-slider">
+              <span id="font-size-value">16px</span>
+            </div>
+          </div>
+
+          <div class="settings-section">
+            <h4 id="about-settings-title">About</h4>
+            <p id="about-settings-version">Arabic Writer v1.4.4 - Enhanced Edition</p>
+            <div style="text-align: center; margin-top: 1rem; display: flex; gap: 0.75rem; justify-content: center;">
+              <button id="view-details-btn" onclick="show('about'); hide('settings');" class="btn btn-outline">
+                <span class="btn-icon">📖</span>
+                <span id="view-details-text">View Details</span>
+              </button>
+              <button id="about-btn-settings" onclick="show('about'); hide('settings');" class="btn btn-outline">
+                <span class="btn-icon">ℹ️</span>
+                <span id="about-btn-text">About</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html> 
